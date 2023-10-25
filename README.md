@@ -1,3 +1,5 @@
+![ecommerce](https://github.com/CodeSystem2022/ecommercePrimates/assets/111933179/ca69bbac-70ce-488d-ba74-4e89d961eb56)
+
 ## Lenguajes:
 
 <div style="overflow-x: auto; overflow-y: hidden;">
@@ -26,15 +28,15 @@
       <th>Alumno:</th>
     </tr>
     <tr>
-      <th>4</th>
+      <th>1</th>
       <th>Lopez, Andrés</th>
     </tr>
     <tr>
-      <th>7</th>
+      <th>2</th>
       <th>Rinaldi, Lucas</th>
     </tr>
     <tr>
-      <th>8</th>
+      <th>3</th>
       <th>Sgandurra, Nicolás</th>
     </tr>
   </table>
