@@ -1,4 +1,4 @@
-![ecommerce](https://github.com/CodeSystem2022/ecommercePrimates/assets/111933179/ca69bbac-70ce-488d-ba74-4e89d961eb56)
+![ecommerce](https://github.com/CodeSystem2022/ecommercePrimates/assets/111933179/38ab7e94-c1e7-4d05-a33f-cff9f32050ac)
 
 ## Lenguajes:
 
