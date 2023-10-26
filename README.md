@@ -39,4 +39,12 @@
       <th>3</th>
       <th>Sgandurra, Nicolás</th>
     </tr>
+    <tr>
+      <th>4</th>
+      <th>Choquevillca, Tania</th>
+    </tr>
+    <tr>
+      <th>5</th>
+      <th>Barra, Mauricio/th>
+    </tr>
   </table>
