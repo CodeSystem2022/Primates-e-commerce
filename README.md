@@ -45,6 +45,6 @@
     </tr>
     <tr>
       <th>5</th>
-      <th>Barra, Mauricio/th>
+      <th>Barra, Mauricio</th>
     </tr>
   </table>
