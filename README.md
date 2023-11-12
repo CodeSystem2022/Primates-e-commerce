@@ -48,7 +48,7 @@
       <th>Barra, Mauricio</th>
     </tr>
     <tr>
-      <th>5</th>
+      <th>6</th>
       <th>Patané, Valentino</th>
     </tr>
   </table>
