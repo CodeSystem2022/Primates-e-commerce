@@ -1,0 +1,46 @@
+@use "../../../styles/scss/abstract/mixins" as *;
+
+.landingProductsContainer {
+    width: 100%;
+    max-height: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 632px);
+    @include media-down(md) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 632px 632px;
+    }
+    @include media-down(xs) {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+    }
+
+    & div {
+        width: 100%;
+        height: 100%;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            outline: 1px solid var(--color-borders);
+        }
+    }
+    & :nth-child(5) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        @include media-down(md) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        @include media-down(sm) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            margin: 0;
+            padding: 0;
+        }
+        @include media-down(xs) {
+            grid-column-start: auto;
+            grid-column-end: auto;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@use "../../styles/scss/abstract/_mixins.scss" as *;
+
+.headTitle {
+    margin-top: 0px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/1114226/pexels-photo-1114226.jpeg?cs=srgb&dl=pexels-messala-ciulla-1114226.jpg&fm=jpg");
+    @include media-down(md) {
+        height: 50vh;
+    }
+    & h2 {
+        -webkit-text-stroke: 2px rgb(8, 4, 1);
+        font-size: 150px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        @include media-down(md) {
+            font-size: 120px;
+        }
+        @include media-down(sm) {
+            font-size: 100px;
+        }
+        @include media-down(xs) {
+            font-size: 60px;
+        }
+    }
+}
+.productsList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    grid-auto-rows: 632px;
+    @include media-down(md) {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    @include media-down(sm) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    @include media-down(xs) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    & .productListItem {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        outline: 1px solid var(--color-borders);
+        & .productImage {
+            width: 100%;
+            height: 90%;
+        }
+        & .productImage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        & .productText {
+            background-color: var(--color-background);
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 25px;
+            font-weight: 300;
+            font-family: var(--font-Helve);
+            color: var(--color-brown);
+            & p {
+                font-family: var(--font-Teko);
+                font-size: 30px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

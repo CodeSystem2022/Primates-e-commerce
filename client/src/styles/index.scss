@@ -1,0 +1,29 @@
+
+/*abstracts*/
+@use 'scss/abstract/variables' as *;
+@use 'scss/abstract/mixins' as *;
+
+
+/*base*/
+@import 'scss/base/_resets.scss';
+@import 'scss/base/_base.scss';
+
+/*----------Components-----------*/
+/*---Home---*/
+@import '../components/NavBar/_navbar.scss';
+@import '../components/Footer/_footer.scss';
+@import '../components/Home/Landing/_landing.scss';
+@import '../components/Auth/_auth.scss';
+@import '../components/Home/LandingCategories/_categoriesLanding.scss';
+@import '../components/Home/LandingProducts/_landingProducts.scss';
+/*---All Products---*/
+@import '../components/AllProducts/_productsContainer.scss';
+
+@import '../components/Product/_productDetail.scss';
+/*---Manager Form---*/
+@import "../components/ManagerForm/_managerForm.scss";
+/*---Cart---*/
+@import "../components/Cart/_cart.scss";
+
+/*---Orders---*/
+@import "../components/Orders/_orders.scss"

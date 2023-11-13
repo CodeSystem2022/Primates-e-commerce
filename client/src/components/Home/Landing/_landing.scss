@@ -1,0 +1,148 @@
+@use "../../../styles/scss/abstract/mixins" as *;
+
+.portada {
+    width: 100%;
+    height: 90vh;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.6);
+        z-index: 1;
+        position: relative;
+    }
+    & div {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & h2 {
+            -webkit-text-stroke: 2px rgb(8, 4, 1);
+            font-weight: 900;
+            font-size: 120px;
+            letter-spacing: 10px;
+            @include media-down(sm) {
+                text-align: center;
+            }
+            @include media-down(xs) {
+                font-size: 80px;
+            }
+        }
+        & h3 {
+            -webkit-text-stroke: 2px rgb(8, 4, 1);
+            font-weight: 400;
+            font-size: 60px;
+            @include media-down(xs) {
+                font-size: 45px;
+                text-align: center;
+            }
+        }
+    }
+}
+.catalogue {
+    display: grid;
+    grid-template-rows: 550px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    @include media-down(lg) {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    @include media-down(md) {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
+.catalogueItem {
+    & img {
+        width: 100%;
+        height: 90%;
+    }
+    border-left: 1px solid var(--color-borders);
+    @include media-down(sm) {
+        border: none;
+    }
+}
+#catalogueItemIntro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    color: var(--color-brown);
+    & h5 {
+        font-size: 50px;
+        padding: 50px;
+    }
+    & p {
+        font-size: 25px;
+        text-align: right;
+        height: max-content;
+
+        width: 100%;
+        padding: 50px;
+        @include media-down(lg) {
+            padding-top: 0;
+        }
+        & button {
+            margin-top: 90px;
+            font-size: 25px;
+            padding: 10px 25px;
+            color: var(--color-brown);
+            border: 1px solid var(--color-brown);
+            transition: all 0.3s ease;
+            @include media-down(lg) {
+                margin-top: 20px;
+            }
+
+            &:hover {
+                background-color: var(--color-brown);
+                color: #fff;
+            }
+        }
+    }
+}
+.catalogueItemInfo {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--font-Helve);
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--color-brown);
+    @include media-down(xs) {
+        font-size: 15px;
+    }
+
+    & p {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        @include media-down(xs) {
+            width: 30%;
+        }
+    }
+    & div {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        & span {
+            font-weight: 100;
+        }
+        & :nth-child(2) {
+            color: var(--color-brown);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
