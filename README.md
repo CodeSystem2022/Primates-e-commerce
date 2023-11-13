@@ -5,7 +5,7 @@
 <img src="https://github.com/CodeSystem2022/Primates-e-commerce/assets/111933179/635187bf-5210-41fe-8117-4ff1fa830486" >
 <img src="https://github.com/CodeSystem2022/Primates-e-commerce/assets/111933179/6932573b-3535-46e5-940f-44c02aa9d8a1" >
 
-<p>Una vez iniciado el front-end ejecutar el servidor desde otra terminal no sin antes haber creado un archivo .emv para declarar las variables de entorno contenidas en el archivo .emv.example. Para ejecutar el servidor instalar las dependencias nuevamente con
+<p>Backend: Una vez iniciado el front-end ejecutar el servidor desde otra terminal no sin antes haber creado un archivo .emv para declarar las variables de entorno contenidas en el archivo .emv.example. Para ejecutar el servidor instalar las dependencias nuevamente con
 "npm i" y luego "npm run start" y ya quedaria funcionando el E-Commerce.
 </p>
 <img src="https://github.com/CodeSystem2022/Primates-e-commerce/assets/111933179/f30be1d8-736f-490f-8712-cf515baec926" >
