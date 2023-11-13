@@ -1,0 +1,7 @@
+@use './variables' as *;
+
+@mixin media-down($breakpoint) {
+    @media screen and (max-width:map-get($breakpoints, $breakpoint)) {
+        @content
+    }
+}

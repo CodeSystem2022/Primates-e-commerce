@@ -1,0 +1,265 @@
+@use "../../styles/scss/abstract/mixins" as *;
+
+.mainNav {
+    position: fixed;
+    top: 0;
+    background-color: var(--color-background);
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 124px;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.31);
+    transition: all 0.4s ease;
+}
+.mainNavTranslucent {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+.navShip {
+    margin-top: 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 102, 0);
+
+    & h6 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-family: var(--font-Helve);
+        @include media-down(xs) {
+            font-size: 9px;
+        }
+    }
+}
+.navMenu {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 3%;
+    height: 70%;
+    width: 35%;
+    color: var(--color-brown);
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    @include media-down(sm) {
+        padding-left: 35px;
+        text-align: center;
+    }
+    & button {
+        padding: 5px 20px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        text-transform: uppercase;
+        @include media-down(xs) {
+            font-size: 15px;
+        }
+    }
+    & .navMenuList {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 120px;
+        left: 0;
+        display: flex;
+        background-color: var(--color-background);
+        align-items: center;
+        justify-content: center;
+        animation: fIn 0.5s;
+        @include media-down(sm) {
+            align-items: center;
+        }
+        & ul {
+            padding-bottom: 150px;
+            width: 80%;
+            justify-content: center;
+            font-size: 100px;
+            display: flex;
+            flex-direction: column;
+            animation: fIn 1.5s;
+            @include media-down(sm) {
+                font-size: 50px;
+            }
+
+            & li {
+                cursor: pointer;
+                margin: 30px 0px;
+                color: var(--color-brown);
+                transition: all 0.3s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    & .navMenuListHidden {
+        display: none;
+    }
+}
+@keyframes fIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.navTitle {
+    height: 70%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & h1 {
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--color-brown);
+        font-weight: 500;
+        font-size: 30px;
+        @include media-down(xs) {
+            font-size: 20px;
+        }
+    }
+}
+.navList {
+    width: 25%;
+    height: 70%;
+    display: flex;
+    justify-content: right;
+    padding-right: 3%;
+    align-items: center;
+    list-style: none;
+    & li {
+        width: 30%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        color: var(--color-brown);
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+}
+.plazaIcon {
+    width: 25px;
+    height: 25px;
+}
+.navBarUserContainer {
+    width: 35%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    & li {
+        width: 80%;
+        text-align: right;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--color-brown);
+        @include media-down(xs) {
+            font-size: 15px;
+        }
+    }
+
+    .navBarUser {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @include media-down(sm) {
+            background-color: var(--color-background);
+            position: absolute;
+            flex-direction: column;
+            height: 60vh;
+            top: 124px;
+            right: 0;
+            padding-top: 20px;
+            border-bottom: 1px solid var(--color-borders);
+            transform: translateX(100%);
+        }
+        & img {
+            object-fit: cover;
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+            border: 1px solid rgb(204, 204, 204);
+            @include media-down(sm) {
+                margin-bottom: 15px;
+                height: 70px;
+                width: 70px;
+            }
+        }
+        & h6 {
+            color: var(--color-brown);
+            text-transform: capitalize;
+            font-size: 20px;
+            cursor: pointer;
+            @include media-down(sm) {
+                font-size: 25px;
+            }
+        }
+        .navBarUserButtonContainer {
+            width: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            & button {
+                width: 50px;
+                font-size: 15px;
+                font-family: var(--font-Helve);
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+                padding: 10px;
+                @include media-down(sm) {
+                    font-size: 20px;
+                }
+            }
+            .cartIcon {
+                width: 25px;
+                height: 25px;
+                margin-right: 5px;
+            }
+        }
+    }
+    .navBarUserTranslate {
+        transform: translateX(0%);
+    }
+    .navBarUserMobile {
+        display: none;
+        @include media-down(sm) {
+            cursor: pointer;
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--color-brown);
+        }
+        @include media-down(xs) {
+            font-size: 15px;
+        }
+    }
+}
+#colorLink {
+    color: var(--color-brown);
+}

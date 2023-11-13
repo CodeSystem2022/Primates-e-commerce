@@ -1,0 +1,71 @@
+@use "../../../styles/scss/abstract/mixins" as *;
+.categoriesLanding {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100vh;
+    @include media-down(md) {
+        grid-template-rows: repeat(3, 40vh);
+        grid-template-columns: 1fr;
+    }
+    @include media-down(xs) {
+        grid-template-rows: repeat(3, 50vh);
+    }
+}
+.categoriesLandingItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    & img {
+        border-color: #160a0a;
+        border-width: 2px;
+        border-style: solid;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    & div {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        color: var(--color-brown);
+        width: 100%;
+        @include media-down(md) {
+            justify-content: center;
+        }
+        @include media-down(sm) {
+            justify-content: space-between;
+        }
+        & h6 {
+            font-size: 50px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-top: 100px;
+            -webkit-text-stroke: 2px rgb(8, 4, 1);
+            color: white; 
+            @include media-down(sm) {
+                margin-top: 30px;
+            }
+        }
+        & p {
+            font-size: 40px;
+            padding: 50px;
+            padding-bottom: 15px;
+            text-align: center;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: 1px;
+            -webkit-text-stroke: 2px rgb(8, 4, 1);
+            color: white; 
+            font-family: var(--font-Helve);
+            @include media-down(md) {
+                display: none;
+            }
+        }
+    }
+}

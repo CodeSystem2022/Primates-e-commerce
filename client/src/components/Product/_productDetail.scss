@@ -1,0 +1,79 @@
+@use "../../styles/scss/abstract/mixins" as *;
+.prodContainer {
+    width: 100%;
+    margin-top: 150px;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-down(xs) {
+        flex-direction: column;
+        height: max-content;
+        margin-top: 130px;
+    }
+}
+.prodImg {
+    width: 50%;
+    height: 100%;
+    @include media-down(xs) {
+        width: 80%;
+    }
+}
+.prodImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.prodInfo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    @include media-down(xs) {
+        width: 80%;
+    }
+    & h1 {
+        color: var(--color-brown);
+        font-size: 65px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    & p {
+        font-size: 20px;
+        margin: 5px 0;
+        font-family: var(--font-Helve);
+        padding-right: 90px;
+    }
+    & h3 {
+        font-family: var(--font-Helve);
+        margin: 15px 0 25px 0;
+        color: var(--color-brown);
+        font-weight: 600;
+        font-size: 25px;
+    }
+    & button {
+        width: 40%;
+        height: 60px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 100;
+        background-color: #321e1e;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 20px;
+        @include media-down(sm) {
+            width: 80%;
+        }
+        &:hover {
+            background-color: #321e1ed7;
+        }
+    }
+    & span {
+        font-size: 15px;
+        color: #000;
+        font-family: var(--font-Helve);
+    }
+}

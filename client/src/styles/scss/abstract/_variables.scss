@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap");
+
+:root {
+    /*fonts*/
+    --font-Teko: "Teko", sans-serif;
+    --font-Helve: "Archivo Narrow", sans-serif;
+
+    /*colors*/
+    --color-background: #f4f1e0;
+    --color-brown: rgb(48, 28, 10);
+    --color-borders: #a8a8a8;
+}
+
+$breakpoints: (
+    xs: 425px,
+    sm: 768px,
+    md: 1024px,
+    lg: 1440px,
+);
