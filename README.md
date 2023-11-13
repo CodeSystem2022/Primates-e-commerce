@@ -1,12 +1,11 @@
 ![ecommerce](https://github.com/CodeSystem2022/ecommercePrimates/assets/111933179/38ab7e94-c1e7-4d05-a33f-cff9f32050ac)
 <details>
 <summary><b>Como iniciar el proyecto</b></summary>
-<p>Front: Abrir una nueva terminal en VisualStudio e instalar las dependencias con "npm i", y luego ejecutar el comando npm run start </p>
+<p>Front: Abrir una ventana en VisualStudio, crear una nueva terminal e instalar las dependencias con "npm i", y luego ejecutar el comando npm run start </p>
 <img src="https://github.com/CodeSystem2022/Primates-e-commerce/assets/111933179/635187bf-5210-41fe-8117-4ff1fa830486" >
 <img src="https://github.com/CodeSystem2022/Primates-e-commerce/assets/111933179/6932573b-3535-46e5-940f-44c02aa9d8a1" >
 
-<p>Backend: Una vez iniciado el front-end ejecutar el servidor desde otra terminal no sin antes haber creado un archivo .emv para declarar las variables de entorno contenidas en el archivo .emv.example. Para ejecutar el servidor instalar las dependencias nuevamente con
-"npm i" y luego "npm run start" y ya quedaria funcionando el E-Commerce.
+<p>Backend: Una vez iniciado el front-end ejecutar el servidor desde otra ventana de VSC y crear otra terminal no sin antes haber creado un archivo .emv para declarar las variables de entorno contenidas en el archivo .emv.example(Click derecho en la carpeta -> New File -> .emv). Para ejecutar el servidor instalar las dependencias nuevamente con "npm i" y luego "npm run start" y ya quedaria funcionando el E-Commerce.
 </p>
 <img src="https://github.com/CodeSystem2022/Primates-e-commerce/assets/111933179/f30be1d8-736f-490f-8712-cf515baec926" >
 </details>
